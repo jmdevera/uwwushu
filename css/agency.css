@@ -153,13 +153,8 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  height:12%;
   background-color: #000000;
   border-color: transparent;
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
-
 }
 .navbar-custom .navbar-brand {
   color: #4b2e83;
@@ -213,48 +208,40 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
-    -webkit-transition: padding 0.35s;
-    -moz-transition: padding 0.35s;
-    transition: padding 0.35s;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
     border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    transition: all 0.35s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
   }
   .navbar-custom .navbar-nav > .active > a {
-    border-radius: 35px;
+    border-radius: 3px;
   }
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #000000;
-	padding: 10px 0;		
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    transition: all 0.35s;	
+    padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
-    font-size: 1.75em;
-	-webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    transition: all 0.35s;
+    font-size: 1.5em;
   }
 }
 header {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  background-image: url(../img/header-bg.jpg);
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  text-align: center;
   color: white;
 }
 header .intro-text {
@@ -262,7 +249,8 @@ header .intro-text {
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
@@ -277,21 +265,15 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding:75px;
-  }
-  header img.intro-lead-in{
-	height: 85vh;
-	width: auto;		
+    padding-top: 300px;
+    padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 73px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
     line-height: 40px;
-    margin-bottom: 35px;
-	font-weight: 700;
-  }
-  header .intro-text p{
-	  margin:35px;
+    margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -320,7 +302,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding-bottom: 150px 0;
+    padding: 150px 0;
   }
 }
 .service-heading {
